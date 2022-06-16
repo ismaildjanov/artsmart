@@ -1,0 +1,41 @@
+.new__order{
+    padding: 65px 122px 0 100px;
+    margin-bottom: 150px;
+}
+
+.new__order-heading{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #212121;
+    margin-bottom: 36px;
+}
+
+.action__buttons{
+    margin-top: 70px;
+}
+
+.action__buttons-confirm{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    background: #3BAC61;
+    border-radius: 4px;
+    margin-right: 24px;
+}
+
+.action__buttons-cancel{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #464646;
+    background: #F4F4F4;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 20px;
+}   
