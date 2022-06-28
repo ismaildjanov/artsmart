@@ -1,0 +1,55 @@
+.checkbox__wrapper{
+    padding: 0 100px 100px 100px;
+}
+
+.form {
+    &__radio-group {
+        display: inline-block;
+        margin-right: 50px;
+    }
+
+    &__radio-input {
+        display: none;
+    }
+    
+    &__radio-label {
+        font-weight: 400;
+        line-height: 16px;
+        color: #000000;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        padding-left: 32px;
+        text-align: center;
+    }
+
+    &__radio-button {
+        height: 22px;
+        width: 22px;
+        background: #FFFFFF;
+        border: 1px solid #C2C2C2;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -1.5px;
+
+
+        &::after {
+            content: "";
+            display: block;
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #C2C2C2;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+}
